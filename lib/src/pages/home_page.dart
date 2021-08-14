@@ -20,8 +20,8 @@ class HomePage extends StatelessWidget{
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [Text('Hola Mundo'),
-          Text('Viqui')],
+          children: [Text('Numero de clicks:',style: TextStyle(fontSize: 25)),
+          Text('0',style: TextStyle(fontSize: 20))],
         ),
       ),
     );
