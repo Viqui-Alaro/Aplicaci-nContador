@@ -18,7 +18,11 @@ class HomePage extends StatelessWidget{
         
       ),
       body: Center(
-        child: Text('Hola Mundo'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [Text('Hola Mundo'),
+          Text('Viqui')],
+        ),
       ),
     );
   }
