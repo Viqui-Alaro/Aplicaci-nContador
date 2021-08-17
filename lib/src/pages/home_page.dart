@@ -4,11 +4,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget{
-  
-
-final estiloTexto= new TextStyle( fontSize: 50);
-
+class HomePage extends StatelessWidget {
+  final estiloTexto = new TextStyle(fontSize: 50);
 
   @override
   Widget build(BuildContext context) {
@@ -18,19 +15,22 @@ final estiloTexto= new TextStyle( fontSize: 50);
         title: Text('Titulo'),
         centerTitle: true,
         elevation: 4.5,
-        
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [Text('Numero de clicks:',style:estiloTexto),
-          Text('0',style:estiloTexto)],
+          children: [
+            Text('Numero de clicks:', style: estiloTexto),
+            Text('0', style: estiloTexto)
+          ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          print('Hola Viqui');
+        },
       ),
     );
   }
-
-
 }
-
-

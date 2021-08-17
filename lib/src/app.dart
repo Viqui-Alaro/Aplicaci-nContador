@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 
 
-
 import 'package:flutter_contador_/src/pages/home_page.dart';
 
 
