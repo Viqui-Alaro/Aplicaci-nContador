@@ -38,17 +38,16 @@ class _ContadorPageState extends State<ContadorPage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: () {
- 
-          setState(() {
-            _conteo++;
-          });
-        },
-      ),
+      floatingActionButton: _crearBotones()
     );
-  }
+ }
+
 }
 
+
+Widget _crearBotones(){
+
+  return FloatingActionButton(onPressed: null,
+  child: Icon(Icons.ac_unit));
+}
 
