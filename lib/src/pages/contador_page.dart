@@ -52,9 +52,9 @@ Widget _crearBotones(){
     mainAxisAlignment: MainAxisAlignment.end,
     children:<Widget> [
       SizedBox(width: 30.0),
-      FloatingActionButton(onPressed: null,child: Icon(Icons.exposure_zero)),
+      FloatingActionButton(onPressed: _reset,child: Icon(Icons.exposure_zero)),
   Expanded(child: SizedBox(width: 8.0)),
-    FloatingActionButton(onPressed: null,child: Icon(Icons.remove)),
+    FloatingActionButton(onPressed: _sustraer,child: Icon(Icons.remove)),
       SizedBox(width: 5.0,),
       FloatingActionButton(onPressed: _agregar,child: Icon(Icons.add))
 
@@ -67,6 +67,20 @@ Widget _crearBotones(){
 
 void _agregar(){
   setState(()=> _conteo++);
+}
+
+
+void _sustraer(){
+  setState(() {
+    _conteo--;
+  });
+}
+
+
+void _reset(){
+  setState(() {
+    _conteo=0;
+  });
 }
 
 
