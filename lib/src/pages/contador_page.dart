@@ -1,11 +1,13 @@
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class ContadorPage extends StatefulWidget{
 
   @override
   createState() => _ContadorPageState();
-  }
+
+}
 
 
 
@@ -42,7 +44,6 @@ class _ContadorPageState extends State<ContadorPage> {
     );
  }
 
-}
 
 
 Widget _crearBotones(){
@@ -55,7 +56,7 @@ Widget _crearBotones(){
   Expanded(child: SizedBox(width: 8.0)),
     FloatingActionButton(onPressed: null,child: Icon(Icons.remove)),
       SizedBox(width: 5.0,),
-      FloatingActionButton(onPressed: null,child: Icon(Icons.add))
+      FloatingActionButton(onPressed: _agregar,child: Icon(Icons.add))
 
     ],
   );
@@ -63,4 +64,15 @@ Widget _crearBotones(){
 
 
 }
+
+void _agregar(){
+  setState(()=> _conteo++);
+}
+
+
+}
+
+
+
+
 
